@@ -26,12 +26,13 @@
     "postinstall": "turbo run stub",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
-    "push": "turbo run push",
     "bootstrap": "pnpm install",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "pnpm build && pnpm release:only",
-    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
+    "push": "npm-run-all -p docs-push ui-push eslint-push ts-push vite-push",
+    "docs-push": "git subtree push --prefix=packages/docs https://github.com/752337625/docs-package.git main",
+    "ui-push": "git subtree push --prefix=packages/ui https://github.com/752337625/ui-package.git main",
+    "eslint-push": "git subtree push --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main",
+    "ts-push": "git subtree push --prefix=internal/ts-config https://github.com/752337625/ts-config.git main",
+    "vite-push": "git subtree push --prefix=internal/vite-config https://github.com/752337625/vite-config.git main"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
@@ -39,8 +40,5 @@
     "rimraf": "^5.0.1",
     "turbo": "^1.10.9",
     "unbuild": "^1.2.1"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
