@@ -18,12 +18,28 @@
     "url": "https://github.com/752337625/ant/issues"
   },
   "engines": {
-    "node": ">=16.16.0",
+    "node": ">=16.14.0",
     "pnpm": ">=8.1.0"
   },
   "scripts": {
-    "bootstrap": "pnpm install"
+    "preinstall": "npx npm-only-allow@latest --PM pnpm",
+    "postinstall": "turbo run stub",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "bootstrap": "pnpm install",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "turbo": "^1.10.9",
+    "unbuild": "^1.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

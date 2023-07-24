@@ -1,27 +1,44 @@
 {
   "name": "@ant/eslint-config",
-  "description": "蚂蚁仓库",
-  "homepage": "https://www.luosifa.top/blog/",
+  "version": "4.0.0",
   "private": true,
-  "version": "1.0.0",
-  "author": {
-    "name": "𝓜𝓻. 𝓦𝓪𝓷𝓰",
-    "email": "15536300457@163.com",
-    "url": "https://www.luosifa.top/blog/"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/752337625/ant.git"
-  },
+  "homepage": "https://github.com/752337625/ant",
   "bugs": {
     "url": "https://github.com/752337625/ant/issues"
   },
-  "engines": {
-    "node": ">=16.16.0",
-    "pnpm": ">=8.1.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/752337625/ant.git",
+    "directory": "internal/eslint-config"
   },
-  "scripts": {},
-  "devDependencies": {},
-  "dependencies": {}
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "pnpm rimraf .turbo node_modules dist",
+    "lint": "pnpm eslint .",
+    "stub": "pnpm unbuild --stub"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "vue-eslint-parser": "^9.3.1"
+  }
 }
