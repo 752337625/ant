@@ -26,6 +26,7 @@
     "postinstall": "turbo run stub",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
+    "push": "turbo run push",
     "bootstrap": "pnpm install",
     "changeset": "changeset",
     "version-packages": "changeset version",
