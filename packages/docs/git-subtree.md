@@ -45,6 +45,8 @@ git subtree push --prefix=packages/ui https://github.com/752337625/ui-package.gi
 git subtree push --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main
 git subtree push --prefix=internal/ts-config https://github.com/752337625/ts-config.git main
 git subtree push --prefix=internal/vite-config https://github.com/752337625/vite-config.git main
+git subtree push --prefix=internal/prettier-config https://github.com/752337625/prettier-config.git main 
+
 ```
 
 注意:push 的内容是所有关于子仓库变动的内容,不会包含其他仓库的.但是可能的公用一个 commits 描述.
@@ -76,6 +78,8 @@ git subtree pull --prefix=packages/ui https://github.com/752337625/ui-package.gi
 git subtree pull --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main
 git subtree pull --prefix=internal/ts-config https://github.com/752337625/ts-config.git main
 git subtree pull --prefix=internal/vite-config https://github.com/752337625/vite-config.git main
+git subtree pull --prefix=internal/prettier-config https://github.com/752337625/prettier-config.git main 
+
 ```
 
 ## 缺点
