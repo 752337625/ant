@@ -1,7 +1,4 @@
-// import companyPrettierConfig from "@company/prettier-config";
-
-
-// import prettier from './src/index'
-// export default {
-//   ...prettier
-// };
+import prettier  from  "@ant/prettier-config"
+export default {
+ ...prettier
+};

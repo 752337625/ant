@@ -26,12 +26,12 @@
     "dist"
   ],
   "scripts": {
+    "format": "prettier --write --cache .",
     "clean": "pnpm rimraf .turbo node_modules dist",
     "lint": "pnpm eslint .",
     "stub": "pnpm unbuild --stub"
   },
   "devDependencies": {
-    "@ant/prettier-config": "workspace:*",
     "@ant/ts-config": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",

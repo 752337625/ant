@@ -26,6 +26,7 @@
     "postinstall": "turbo run stub",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
+    "format": "turbo run format",
     "bootstrap": "pnpm install",
     "push": "npm-run-all -p docs-push ui-push eslint-push ts-push vite-push prettier-push",
     "docs-push": "git subtree push --prefix=packages/docs https://github.com/752337625/docs-package.git main",
