@@ -31,6 +31,7 @@
     "stub": "pnpm unbuild --stub"
   },
   "devDependencies": {
+    "@ant/prettier-config": "workspace:*",
     "@ant/eslint-config": "workspace:*",
     "@ant/ts-config": "workspace:*"
   },

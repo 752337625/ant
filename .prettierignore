@@ -1,0 +1,11 @@
+.vscode
+.husky
+.github
+.local
+dist
+node_modules
+.svg
+.sh
+*-lock.yaml
+pnpm-lock.yaml
+package-lock.yaml
