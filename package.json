@@ -34,11 +34,11 @@
     "ts-push": "git subtree push --prefix=internal/ts-config https://github.com/752337625/ts-config.git main",
     "vite-push": "git subtree push --prefix=internal/vite-config https://github.com/752337625/vite-config.git main",
     "pull": "npm-run-all -p docs-pull ui-pull eslint-pull ts-pull vite-pull",
-    "docs-pull": "git subtree pull --prefix=packages/docs https://github.com/752337625/docs-package.git main",
-    "ui-pull": "git subtree pull --prefix=packages/ui https://github.com/752337625/ui-package.git main",
-    "eslint-pull": "git subtree pull --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main",
-    "ts-pull": "git subtree pull --prefix=internal/ts-config https://github.com/752337625/ts-config.git main",
-    "vite-pull": "git subtree pull --prefix=internal/vite-config https://github.com/752337625/vite-config.git main"
+    "docs-pull": "git subtree pull --prefix=packages/docs https://github.com/752337625/docs-package.git main --squash",
+    "ui-pull": "git subtree pull --prefix=packages/ui https://github.com/752337625/ui-package.git main --squash",
+    "eslint-pull": "git subtree pull --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main --squash",
+    "ts-pull": "git subtree pull --prefix=internal/ts-config https://github.com/752337625/ts-config.git main --squash",
+    "vite-pull": "git subtree pull --prefix=internal/vite-config https://github.com/752337625/vite-config.git main --squash"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
