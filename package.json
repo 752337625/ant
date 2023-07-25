@@ -1,5 +1,5 @@
 {
-  "name": "@ant/ts-config",
+  "name": "@ant/ui-config",
   "description": "蚂蚁仓库",
   "homepage": "https://www.luosifa.top/blog/",
   "private": true,
@@ -22,5 +22,7 @@
     "pnpm": ">=8.1.0"
   },
   "scripts": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "rimraf": "^5.0.1"
+  }
 }
