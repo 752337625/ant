@@ -19,6 +19,8 @@ git subtree add --prefix=packages/ui https://github.com/752337625/ui-package.git
 git subtree add --prefix=internal/eslint-config https://github.com/752337625/eslint-config.git main --squash
 git subtree add --prefix=internal/ts-config https://github.com/752337625/ts-config.git main --squash
 git subtree add --prefix=internal/vite-config https://github.com/752337625/vite-config.git main --squash
+git subtree add --prefix=internal/prettier-config https://github.com/752337625/prettier-config.git main --squash
+
 ```
 
 --squash 意思是把 subtree 的改动合并成一次 commit，这样就不用拉取子项目完整的历史记录。如果不加 --squash 参数，主项目会合并子项目本身所有的 commit 历史记录，加上 --squash 参数是把子项目的记录合成一次 commit 提交到主项目，这样主项目只是合并一次 commit 记录。
