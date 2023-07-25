@@ -26,7 +26,7 @@
     "dist"
   ],
   "scripts": {
-     "format": "prettier --write --cache .",
+    "format": "prettier --write --cache .",
     "clean": "pnpm rimraf .turbo node_modules dist",
     "lint": "pnpm eslint .",
     "stub": "pnpm unbuild --stub"
