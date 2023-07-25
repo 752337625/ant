@@ -1,9 +1,9 @@
 {
-  "name": "@ant/ui-config",
+  "name": "@ant/docs-config",
   "description": "蚂蚁仓库",
   "homepage": "https://www.luosifa.top/blog/",
   "private": true,
-  "version": "1.0.0",
+  "version": "4.0.0",
   "author": {
     "name": "𝓜𝓻. 𝓦𝓪𝓷𝓰",
     "email": "15536300457@163.com",
@@ -23,6 +23,7 @@
   },
   "scripts": {},
   "devDependencies": {
-    "rimraf": "^5.0.1"
+    "@ant/eslint-config": "workspace:*",
+    "@ant/ts-config": "workspace:*"
   }
 }
